@@ -5,6 +5,13 @@ html, body {
     padding: 15px;
 }
 
+.error {
+    display: block;
+    background-color: red !important;
+    color: wheat !important;
+    border: 1px dashed black ;
+}
+
 #calculator {
     display: flex;
     flex-direction: column;
@@ -35,6 +42,7 @@ html, body {
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.5px;
+    box-sizing: border-box
 }
 
 .small_red {

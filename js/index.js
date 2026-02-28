@@ -62,7 +62,11 @@ function calculate(ev) {
             if (Number(inputTwo.value) == 0){
                 res = null;
                 alert("Неделить на 0 нельзя!!!");
+                inputTwo.classList.add("error");
                 break;
+            }
+            if (inputTwo.classList.contains("error")) {
+                inputTwo.classList.remove("error");
             }
             res = Number(inputOne.value) / Number(inputTwo.value);
             break;
