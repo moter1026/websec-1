@@ -59,9 +59,9 @@ function calculate(ev) {
             res = Number(inputOne.value) * Number(inputTwo.value);
             break;
         case "/":
-            if (Number(inputTwo.value) == 0){
+            if (Number(inputTwo.value) == 0) {
                 res = null;
-                alert("Неделить на 0 нельзя!!!");
+                alert("Делить на 0 нельзя!!!");
                 inputTwo.classList.add("error");
                 break;
             }
